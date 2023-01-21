@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.contenedor-principal {
+  width: 100%;
+  height: 1024px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.lado-izquierdo {
+  width: 70%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+  height: 5%;
+}
+.img-logo {
+  max-width: 100%;
+  height: auto;
+}
+.centro {
+  width: 100%;
+  height: 95%;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.texto-ingresado {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.textarea-ingresado {
+  resize: none;
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 24px;
+  color: #0a3871;
+}
+::placeholder {
+  color: #0a3871;
+}
+.texto1 {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  margin-left: 27%;
+  font-size: 12px;
+  color: black;
+}
+.danger {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+.botones {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-encriptar {
+  background: #0a3871;
+  border-radius: 24px;
+  width: 35%;
+  height: 67px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid #0a3871;
+}
+.btn-encriptar:hover {
+  background: #01051d;
+  border: 1px solid #01051d;
+  transition: 0.5s;
+}
+.btn-desencriptar {
+  background: #d8dfe8;
+  border-radius: 24px;
+  width: 35%;
+  height: 67px;
+  color: #0a3871;
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid #0a3871;
+}
+.btn-desencriptar:hover {
+  background: #a6acaf;
+  border: 1px solid #a6acaf;
+  transition: 0.5s;
+}
+.lado-derecho {
+  width: 25%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.imagen-muneco {
+  padding-top: 100px;
+  width: 95%;
+  height: 80%;
+}
+.muneco {
+  max-width: 100%;
+  height: auto;
+}
+.texto2 {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0a3871;
+}
+.texto3 {
+  width: 100%;
+  height: 10%;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0a3871;
+}
+#mostrar1 {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+#mostrar2 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+.titulo {
+  width: 90%;
+  height: 5%;
+  margin: auto;
+  font-family: "inter";
+  font-size: 24px;
+  text-align: center;
+  padding-top: 5px;
+}
+.texto-mostrado {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  color: #0a3871;
+}
+
+.textarea-mostrado {
+  width: 100%;
+  height: 50%;
+  padding-top: 20px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #0a3871;
+  background-color: white;
+}
+.copiar {
+  width: 90%;
+  height: 15%;
+  margin: auto;
+}
+.btn-copiar {
+  width: 100%;
+  height: 67px;
+  border-radius: 24px;
+  font-size: 24px;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+}
+.btn-copiar:hover {
+  background: #a6acaf;
+  border: 1px solid #a6acaf;
+  transition: 0.5s;
+}
+footer {
+  width: 100%;
+  height: 5%;
+  background-color: #ccd1d1;
+  color: black;
+  font-family: sans-serif;
+}
+
+@media (max-width: 800px) {
+  .contenedor-principal {
+    width: 100%;
+    height: 1050px;
+  }
+
+  .lado-izquierdo {
+    width: 100%;
+    height: 72%;
+  }
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 270px;
+  }
+
+  .lado-derecho {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin: 0 15px 15px 15px;
+  }
+  .imagen-muneco {
+    display: none;
+  }
+  .texto2 {
+    padding-top: 5%;
+    height: 150px;
+  }
+  .texto3 {
+    padding: 0;
+    height: 100px;
+  }
+  .titulo {
+    height: 50px;
+  }
+  .texto-mostrado {
+    height: auto;
+  }
+  .copiar {
+    height: 100px;
+  }
+  footer {
+    width: 100%;
+    height: 3%;
+  }
+}
+@media (max-width: 375px) {
+  .contenedor-principal {
+    width: 100%;
+    height: 940px;
+  }
+  .lado-izquierdo {
+    width: 100%;
+    height: 72%;
+  }
+
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 350px;
+  }
+
+  .lado-derecho {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin: 25px 10px 10px 10px;
+  }
+  .texto2 {
+    padding-top: 5%;
+    height: 90px;
+  }
+  .texto3 {
+    padding: 0;
+    height: 50px;
+  }
+  #mostar2 {
+    height: auto;
+  }
+  .titulo {
+    height: 30px;
+  }
+  .textarea-mostrado {
+    height: auto;
+  }
+  .copiar {
+    height: 80px;
+  }
+}

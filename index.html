@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <div class="lado-izquierdo">
+        <header>
+          <img class="img-logo" src="imagenes/Logo.png" alt="" />
+        </header>
+        <div class="centro">
+          <div class="texto-ingresado">
+            <textarea
+            class="textarea-ingresado"
+            id="ingresado"
+            placeholder="Ingrese el texto aqui"
+            cols="30"
+            rows="10"
+            autofocus
+            spellcheck="false"
+            ></textarea>
+          </div>
+          <div class="texto1">
+            <p></p>
+            <img src="imagenes/danger.png" class="danger" />Solo letras
+            minusculas y sin acentos
+          </p>
+        </div>
+        <div class="botones">
+          <input type="button" class="btn-encriptar" value="Encriptar" />
+          <input type="button" class="btn-desencriptar" value="Desencriptar" />
+        </div>
+      </div>
+    </div>
+    <div class="lado-derecho">
+      <div id="mostrar1">
+        <div class="imagen-muneco "><img src="imagenes/Muneco.png" class="muneco"></div>
+        <div class="texto2 "><h2>Ningún mensaje fue encontrado</h2></div>
+        <div class="texto3 "><p>Ingrese el texto que desees encriptar o desencriptar.</p></div>
+      </div>
+      <div id="mostrar2">
+        <div class="titulo"><h2 id="titulo-mostrado"></h2></div>
+        <div class="texto-mostrado">
+          <textarea id="mostrado" class="textarea-mostrado"  spellcheck="false" cols="10" rows="20" readonly></textarea>
+        </div>
+        <div class="copiar">
+          <input type="button" class="btn-copiar" value="Copiar">
+        </div>
+      </div>
+    </div>
+    <footer><h5>Autor: Eduardo Pomposo Muñoz</h5></footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
